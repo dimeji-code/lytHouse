@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html ontouchmove>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <title>Lythouse</title>
+        <script src="jquery-3.6.0.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+        <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png"/>
+       
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/e9739628bd.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body onclick id="body">
+
+        <div id="navbar">
+           
+            <!-- THE TAB INDEX MAKES #ONLY A FOCUSABLE TARGET -->
+            <div id="only" class="searchDropdown dropdown" tabindex="0">
+      
+                <div id="searchBar" >
+                  <input placeholder="Search Cocktail Database" />
+                  <div class="searchButton">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+                <div class="dropdown-suggestions">
+                 
+                </div>
+            </div>
+      
+              
+            <button onclick="location.href = 'https://www.thecocktaildb.com/api.php?ref=apilist.fun'; " class="signinBtn lightBtn"><i class="fa-solid fa-database"></i>API </button>
+        </div>
+        <div class="disclaimer">
+      
+            <button id="disclaimer">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          <div class="disclaimerBody">
+            <h5>DISCLAIMER</h5> 
+            <p>
+              This website is made with the use of TheCocktailDb free API.</p>
+            <p>This website is not a paid advertisement but just a side project for my resume. </p>
+            <p>Enjoy!</p>
+          </div>
+        </div>
+        <div id="landing">
+            <div class="landingTxt">
+                <h1>The Cocktail Collection</h1>
+                <h5>Find any cocktail recipe and ideas for any occasion.</h5>
+            </div>
+            <div class="landingImg">
+                <img src="images/wine2.png" />
+            </div>
+        </div>
+        <div id="display">
+            <div class="leftPanel">
+                <h4>Selected cocktail</h4>
+                <div class="wineImg">
+                    <img src="images/ruler22.gif" />
+                </div>
+            </div>
+            <div class="rightPanel">
+                <div class="descContainer">
+                    <h5 class="alcoholic"></h5>
+                    <div class="subHeader">
+                        <h4 >Category : </h4>
+                        <h5 class="category"></h5>
+                    </div>
+                    <div class="instructions">
+                    </div>
+                    <h5 class="subHeader">Ingredients</h5>
+                    <ul class="ingredients">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="random">
+            <!-- <h4>Random Cocktail Generator</h4> -->
+            <div class="generator">
+                <h4>Random Cocktail Generator</h4>
+
+                <div class="generatorHead">
+                <button onclick="fetchRandom()" class="generateBtn"> <i class="fa-solid fa-shuffle"></i>Generate</button>   
+                </div>
+                <div onclick="" class="randomDesc">
+                    <div class="layer"></div>
+                    <img src="" />
+                    <div class="drink"><h5></h5></div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <h5></h5>
+        </div>
+        
+        
+    </body>
+</html>
+<script src="./index.js"></script>
